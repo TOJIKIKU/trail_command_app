@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>レストランコマンド生成</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/qrcode.min.js"></script>
+  <script src="js/restaurant.js"></script>
+</head>
+<body>
+  <h1>レストランコマンドを生成！</h1>
+
+  <section>
+    <h2>ランダムでコマンドを作成</h2>
+    <button id="generateBtn">ランダムコマンド生成</button>
+    <div id="randomCommand" class="command-box"></div>
+    <div id="randomQrcode"></div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>自分でコマンドを入力して作成</h2>
+    <input type="text" id="customInput" placeholder="コマンドを入力" class="text-input">
+    <button id="customBtn">このコマンドでQR作成</button>
+    <div id="customCommand" class="command-box"></div>
+    <div id="customQrcode"></div>
+  </section>
+
+  <br><br>
+
+  <button onclick="location.href='index.html'" class="back-btn">← 戻る</button>
+</body>
+</html>
